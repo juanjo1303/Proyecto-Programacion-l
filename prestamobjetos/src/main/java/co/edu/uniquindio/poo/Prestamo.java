@@ -8,6 +8,8 @@ public class Prestamo {
     private Integer diasTranscurridos;
     private Double valor;
     private final Collection<DetallePrestamo> listaDetallePrestamos;
+    private Empleado empleado;
+    private Cliente cliente;
 
     public Prestamo(String codigo, Integer diasSolicitados, Integer diasTranscurridos, Double valor,
             Collection<DetallePrestamo> listaDetallePrestamos) {
@@ -23,6 +25,5 @@ public class Prestamo {
         assert valor != null && valor > 0 : "El valor es requerido";
         assert listaDetallePrestamos != null;
     }
-    
 }
 
