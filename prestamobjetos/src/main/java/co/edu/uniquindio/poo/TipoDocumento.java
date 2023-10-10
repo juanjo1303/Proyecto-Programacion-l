@@ -9,5 +9,4 @@ public enum TipoDocumento {
     private TipoDocumento(Integer tipo) {
         this.tipo = tipo;
     }
-
 }
