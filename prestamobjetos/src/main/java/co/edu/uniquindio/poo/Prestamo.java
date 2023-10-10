@@ -1,7 +1,5 @@
 package co.edu.uniquindio.poo;
-
 import java.util.Collection;
-
 public class Prestamo {
     private String codigo;
     private Integer diasSolicitados;
@@ -18,12 +16,11 @@ public class Prestamo {
         this.diasTranscurridos = diasTranscurridos;
         this.valor = valor;
         this.listaDetallePrestamos = listaDetallePrestamos;
-
         assert codigo != null && !codigo.isBlank() : "El codigo es requerido";
         assert diasSolicitados != null && diasSolicitados > 0 : "Los dias solicitados son requeridos";
         assert diasTranscurridos != null && diasTranscurridos > 0 : "Los dias transcurridos son requeridos";
         assert valor != null && valor > 0 : "El valor es requerido";
         assert listaDetallePrestamos != null;
     }
-}
 
+}

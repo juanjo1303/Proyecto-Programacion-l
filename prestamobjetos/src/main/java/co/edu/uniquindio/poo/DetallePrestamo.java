@@ -10,7 +10,7 @@ public class DetallePrestamo {
         this.subTotal = subTotal;
         this.objeto = objeto;
     }
-    
+
     public Integer getUnidadesPrestadas() {
         return unidadesPrestadas;
     }
